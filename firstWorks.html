@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/letterizejs@2.0.1/lib/letterize.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="individualWorks.js" defer></script>
+    <title>Emmanuel Lutterodt Portfolio</title>
+  </head>
+  <body>
+    <header class="navBar worksNav">
+      <a class="logo" href="index.html"
+        ><img src="static/Lutterodt Logo.svg" alt="Emmanuel Lutterodt Logo"
+      /></a>
+      <div>
+        <a class="backButton" href="works.html">Back</a>
+      </div>
+    </header>
+    <main>
+      <div class="worksPageHeading">
+        <h1 class="worksHeading">Creative Website</h1>
+      </div>
+      <section class="descriptionSection">
+        <div class="descriptionContainer">
+          <div class="description">
+            <h4>Context</h4>
+            <p class="descriptionText">
+              An interactive experience developed to showcase my skills using
+              GSAP, a powerful javascript animation library. Started as a summer
+              project, and developed in to an acoustically and visually
+              immersive website. It's the first static website in which I
+              included a story-telling experience, in order to enhance the
+              user's experience, and let people know about my philosophy.
+            </p>
+          </div>
+          <div class="durationAndTools">
+            <div class="duration">
+              <h4>Duration</h4>
+              <p class="descriptionText">1 Month</p>
+            </div>
+          </div>
+          <div class="tools">
+            <h4>Tools</h4>
+            <p class="descriptionText">
+              Figma<br />HTML/CSS<br />Javascript<br />GSAP<br />Anime.js
+            </p>
+          </div>
+        </div>
+        <div class="viewButton"></div>
+      </section>
+      <div class="arrowContainer">
+        <img src="static/arrowDown.svg" />
+      </div>
+      <section class="imagesSection">
+        <div class="twoImages">
+          <img
+            src="static/heroPageCreativeWebsite.png"
+            class="smallWorksImage"
+          />
+          <img
+            src="static/philosophyPageCreativeWebsite.png"
+            class="smallWorksImage"
+          />
+        </div>
+        <div class="oneImage">
+          <video class="bigWorksImage" autoplay muted loop>
+            <source
+              src="static/CreativeWebsitePageAnimation.mp4 "
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="twoImages">
+          <img
+            src="static/aboutMePageCreativeWebsite.png"
+            class="smallWorksImage"
+          />
+          <img
+            src="static/singleWorksPageCreativeWebsite.png"
+            class="smallWorksImage"
+          />
+        </div>
+      </section>
+      <section class="backSectionContainer">
+        <a href="secondWorks.html" class="nextButton"
+          ><h2 class="backSectionText">Next</h2></a
+        >
+      </section>
+    </main>
+    <footer class="fixedFooter">
+      <div class="audioButton">
+        <a href="https://www.behance.net/eman-lutterodt" target="_blank"
+          >Behance</a
+        >
+      </div>
+      <div><p class="footerText">EMMANUEL ETHAN LUTTERODT - PORTFOLIO</p></div>
+      <div class="aboutButtonDiv" id="aboutButtonId">
+        <a class="aboutButton" id="aboutButton" href="about.html">ABOUT</a>
+      </div>
+    </footer>
+  </body>
+</html>

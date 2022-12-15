@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/letterizejs@2.0.1/lib/letterize.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="individualWorks.js" defer></script>
+    <title>Emmanuel Lutterodt Portfolio</title>
+  </head>
+  <body>
+    <header class="navBar worksNav">
+      <a class="logo" href="index.html"
+        ><img src="static/Lutterodt Logo.svg" alt="Emmanuel Lutterodt Logo"
+      /></a>
+      <div>
+        <a class="backButton" href="works.html">Back</a>
+      </div>
+    </header>
+    <main>
+      <div class="worksPageHeading">
+        <h1 class="worksHeading">Perfume Color Code</h1>
+      </div>
+      <section class="descriptionSection">
+        <div class="descriptionContainer">
+          <div class="description">
+            <h4>Context</h4>
+            <p class="descriptionText">
+              This color code designed by myself, was done on behalf the
+              portfolio assignment from the Content Design for New Media course
+              at the School of Engineering, Jonkoping University. The color
+              code, expresses non visual sensations (such as smell, touch, and
+              emotions) in colors, and shapes.
+            </p>
+          </div>
+          <div class="durationAndTools">
+            <div class="duration">
+              <h4>Duration</h4>
+              <p class="descriptionText">3 Days</p>
+            </div>
+          </div>
+          <div class="tools">
+            <h4>Tools</h4>
+            <p class="descriptionText">
+              Adobe Illustrator<br />Figma<br />Adobe After Effects
+            </p>
+          </div>
+        </div>
+        <div class="viewButton"></div>
+      </section>
+      <div class="arrowContainer">
+        <img src="static/arrowDown.svg" />
+      </div>
+      <section class="imagesSection">
+        <div class="twoImagesNormal">
+          <video class="smallWorksImageNormal" autoplay muted loop>
+            <source src="static/colorChange.mp4" type="video/mp4" />
+          </video>
+          <img src="static/colors.png" class="smallWorksImageNormal" />
+        </div>
+        <div class="oneImage">
+          <video class="bigWorksImageBugFix" autoplay muted loop>
+            <source src="static/Animated Shapes.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="oneImageOnSpeed">
+          <img class="bigWorksImageBugFix" src="static/PerfumeMockUps.png" />
+        </div>
+      </section>
+      <section class="backSectionContainer">
+        <a href="fifthWorks" class="nextButton"
+          ><h2 class="backSectionText">Next</h2></a
+        >
+      </section>
+    </main>
+    <footer class="fixedFooter">
+      <div class="audioButton">
+        <a href="https://www.behance.net/eman-lutterodt" target="_blank"
+          >Behance</a
+        >
+      </div>
+      <div><p class="footerText">EMMANUEL ETHAN LUTTERODT - PORTFOLIO</p></div>
+      <div class="aboutButtonDiv" id="aboutButtonId">
+        <a class="aboutButton" id="aboutButton" href="about.html">ABOUT</a>
+      </div>
+    </footer>
+  </body>
+</html>

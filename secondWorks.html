@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/letterizejs@2.0.1/lib/letterize.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="individualWorks.js" defer></script>
+    <title>Emmanuel Lutterodt Portfolio</title>
+  </head>
+  <body>
+    <header class="navBar worksNav">
+      <a class="logo" href="index.html"
+        ><img src="static/Lutterodt Logo.svg" alt="Emmanuel Lutterodt Logo"
+      /></a>
+      <div>
+        <a class="backButton" href="works.html">Back</a>
+      </div>
+    </header>
+    <main>
+      <div class="worksPageHeading">
+        <h1 class="worksHeading">Personal Brand</h1>
+      </div>
+      <section class="descriptionSection">
+        <div class="descriptionContainer">
+          <div class="description">
+            <h4>Context</h4>
+            <p class="descriptionText">
+              This is my personal brand, that was also part of an assignment at
+              the School of Engineering, Jonkoping University. This project
+              required me to reflect upon my own characterstics, values, and
+              message that I want to get across to the world.
+            </p>
+          </div>
+          <div class="durationAndTools">
+            <div class="duration">
+              <h4>Duration</h4>
+              <p class="descriptionText">1 Month</p>
+            </div>
+          </div>
+          <div class="tools">
+            <h4>Tools</h4>
+            <p class="descriptionText">Figma<br />Adobe Creative Suite</p>
+          </div>
+        </div>
+        <div class="viewButton"></div>
+      </section>
+      <div class="arrowContainer">
+        <img src="static/arrowDown.svg" />
+      </div>
+      <section class="imagesSection">
+        <div class="twoImagesNormal">
+          <img src="static/LogoBlack.png" class="smallWorksImageNormal" />
+          <img src="static/LogoWhite.png" class="smallWorksImageNormal" />
+        </div>
+        <div class="oneImage">
+          <video class="bigWorksImage" autoplay muted loop>
+            <source
+              src="static/Personal Logo Animation.mp4 "
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="twoImagesNormal">
+          <img src="static/LogoColors.png" class="smallWorksImageNormal" />
+          <img src="static/LogoTypography.png" class="smallWorksImageNormal" />
+        </div>
+        <div class="oneImage">
+          <img src="static/StationaryMockUps.png" class="bigWorksImageBugFix" />
+        </div>
+        <div class="twoImagesNormal">
+          <img src="static/LogoOnPaper.png" class="smallWorksImageNormal" />
+          <video class="smallWorksImageNormal" autoplay muted loop>
+            <source src="static/LogoMockUp.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+      <section class="backSectionContainer">
+        <a href="thirdWorks.html" class="nextButton"
+          ><h2 class="backSectionText">Next</h2></a
+        >
+      </section>
+    </main>
+    <footer class="fixedFooter">
+      <div class="audioButton">
+        <a href="https://www.behance.net/eman-lutterodt" target="_blank"
+          >Behance</a
+        >
+      </div>
+      <div><p class="footerText">EMMANUEL ETHAN LUTTERODT - PORTFOLIO</p></div>
+      <div class="aboutButtonDiv" id="aboutButtonId">
+        <a class="aboutButton" id="aboutButton" href="about.html">ABOUT</a>
+      </div>
+    </footer>
+  </body>
+</html>

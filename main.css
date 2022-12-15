@@ -1,0 +1,445 @@
+:root {
+  --background-color: #000000;
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(static/Poppins-Bold.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(static/Poppins-Regular.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(static/Poppins-Medium.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url(static/Poppins-Light.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url(static/Poppins-SemiBold.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Questrial-Regular;
+  src: url(static/Questrial-Regular.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+.worksNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+h1 {
+  font-size: 7.5em;
+  line-height: 1em;
+  letter-spacing: -4.5px;
+  color: var(--primary-color);
+  font-family: Questrial-Regular;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5% 2.5% 0 2.5%;
+  position: fixed;
+}
+
+.worksContainer {
+  display: flex;
+  align-items: center;
+  justify-content: justify-content;
+  height: 100%;
+}
+
+.circleWorksButton {
+  margin-right: 4px;
+}
+
+.fixedFooter {
+  display: flex;
+  color: var(--primary-color);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5% 2.5% 2.5%;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:visited {
+  color: var(--primary-color);
+}
+
+.aboutButton {
+  color: var(--primary-color);
+  font-family: Questrial-Regular;
+  font-size: 0.875em;
+  padding: 10px 15px;
+  border-radius: 1000px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: var(--primary-color);
+}
+
+.audioButton {
+  font-family: Questrial-Regular;
+  color: var(--primary-color);
+  font-size: 0.875em;
+}
+
+.footerText {
+  font-family: Questrial-Regular;
+  font-size: 0.75em;
+  letter-spacing: 0.5;
+}
+
+.heroFlex {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skewY(-10deg);
+  pointer-events: none;
+}
+
+.heroPage {
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    position: relative;
+    height: 100vh;
+    font-size: 50%;
+  }
+
+  .heroFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    letter-spacing: 0px;
+  }
+}
+
+.headingFlex {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+h2 {
+  font-family: Questrial-Regular;
+  font-size: 2.5em;
+  font-weight: 100;
+  color: var(--primary-color);
+}
+
+h3 {
+  font-family: Questrial-Regular;
+  font-size: 0.875em;
+  color: var(--primary-color);
+  font-weight: 100;
+}
+
+.dropDownCard {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 5fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectType {
+  justify-self: end;
+}
+
+.line {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 0.5px;
+}
+
+.cardContainer {
+  margin: 0 5% 75px 5%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.worksHeading {
+  text-align: center;
+}
+
+.worksSection {
+  margin: 250px 0 0 0;
+}
+
+#bodyContainer {
+  perspective: 30px;
+}
+
+#heroContainer {
+  transition: transform 0.4s;
+}
+
+.bodyContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.openingBackground {
+  z-index: 1000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  margin: 0;
+  padding: 0;
+}
+
+.videoContainer {
+  height: 60%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  display: inline-block;
+}
+
+.heroImageContainer {
+  margin-left: -350px;
+  overflow: hidden;
+  transform-origin: left;
+  transform: scaleX(100%);
+}
+
+.gradientBar {
+  background: radial-gradient(
+    circle at -8%,
+    #ffffff 0%,
+    #ff7a00 20%,
+    #ff0000 50%,
+    #0500ff 100%
+  );
+  width: 500px;
+  height: 90px;
+  background-size: 400%, 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.cc5 {
+  padding-bottom: 150px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+.descriptionSection {
+  padding: 0 20%;
+}
+
+.aboutSection {
+  padding: 0 0;
+}
+
+.descriptionContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.descriptionText {
+  font-family: Questrial-Regular;
+  font-size: 0.875em;
+  color: var(--primary-color);
+  font-weight: 100;
+}
+
+h4 {
+  font-family: Questrial-Regular;
+  font-size: 1.2em;
+  color: var(--primary-color);
+  font-weight: 100;
+}
+
+.description {
+  width: 40%;
+}
+
+.imagesSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 300px 0 0 0;
+}
+.twoImages {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.twoImagesNormal {
+  display: flex;
+  width: 100vw;
+  padding: 0 10vw;
+}
+
+.smallWorksImage {
+  height: 100%;
+  width: 40%;
+}
+
+.smallWorksImageNormal {
+  width: 50%;
+}
+
+.bigWorksImage {
+  height: 100%;
+  width: 100%;
+}
+
+.bigWorksImageBugFix {
+  height: auto;
+  width: 100%;
+  margin-bottom: -10px;
+  padding: 0 10vw;
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.oneImage {
+  height: 95vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.oneImageOnSpeed {
+  height: auto;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.backSectionContainer {
+  margin-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.backSectionText {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.25em;
+  padding: 10px 15px;
+  border-radius: 1000px;
+}
+
+.backLink {
+  display: block;
+}
+
+.backButton {
+  font-family: Questrial-Regular;
+  font-size: 1em;
+  color: var(--primary-color);
+  font-weight: 100;
+}
